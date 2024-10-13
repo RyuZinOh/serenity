@@ -36,7 +36,6 @@ let currentThresholdIndex = 0;
 //--------------
 function preload() {
     this.load.video('bg', 'assets/bg.mp4');
-    this.load.audio('wave', 'assets/wave.wav');
     this.load.audio('bgMusic', 'assets/bg.wav');
     this.load.image('countdown1', 'assets/1.png');
     this.load.image('countdown2', 'assets/2.png');
@@ -59,7 +58,6 @@ function create() {
     bgVideo.setLoop(true);
     bgVideo.play();
     
-    this.sound.add('wave').play({ loop: true });
 
     particles = this.add.particles(0, 0, 0x00ff00, 50);
     emitter = particles.createEmitter({
