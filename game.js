@@ -18,9 +18,9 @@ const config = {
 const game = new Phaser.Game(config);
 
 let bigBar, smallBar, dot, startButton, retryButton, scoreText, achievementsText, particles, emitter;
-let smallBarSpeed = 2;
+let smallBarSpeed = 3;
 let dotMoveRightSpeed = 4;
-let dotMoveLeftSpeed = 3;
+let dotMoveLeftSpeed = 4;
 let gameOver = false;
 let gameStarted = false;
 let moveRightOnClick = false;
